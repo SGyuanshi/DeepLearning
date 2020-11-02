@@ -129,9 +129,9 @@ class HMM:
         :param O:
         :return:
         """
-        pi = self.pi
-        A = self.A
-        B = self.B
+        pi = self.pi.copy()
+        A = self.A.copy()
+        B = self.B.copy()
 
         for i in range(self.N):
             pi[i] = self.gamma(0, i, O)
@@ -149,7 +149,8 @@ class HMM:
             for t in range(len(O)):
                 if O[t] in Map.keys():
                     Map[O[t]].append(t)
-                Map[O[t]] = [t]
+                else:
+                    Map[O[t]] = [t]
             # 这里k对应观测序列中的一个不同的值
             for k, tl in Map.items():
                 B[i][k] = sum([self.gamma(t, i, O) for t in tl]) / B_denominator

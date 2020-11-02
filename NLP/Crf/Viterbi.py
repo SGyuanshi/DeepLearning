@@ -33,7 +33,6 @@ def viterbi_decode(score, transition_params):
     return viterbi, viterbi_score
 
 
-
 if __name__ == '__main__':
     score = np.array([[0.8, 0.1, 0.1],
                       [0.1, 0.5, 0.4],
