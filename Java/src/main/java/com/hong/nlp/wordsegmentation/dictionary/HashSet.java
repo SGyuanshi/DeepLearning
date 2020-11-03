@@ -46,4 +46,9 @@ public class HashSet implements Dictionary {
     public void removeAll(Collection<String> words) {
         dict.removeAll(words);
     }
+
+    @Deprecated
+    public long get(String gramWords) {
+        return -1;
+    }
 }

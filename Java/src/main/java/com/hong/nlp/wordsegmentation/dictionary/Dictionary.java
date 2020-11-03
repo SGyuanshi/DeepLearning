@@ -43,4 +43,11 @@ public interface Dictionary {
      * @param words
      */
     public void removeAll(Collection<String> words);
+
+    /**
+     * 获取词库中出现过输入单词对的数量
+     * @param gramWords
+     * @return
+     */
+    public long get(String gramWords);
 }

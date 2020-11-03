@@ -9,6 +9,8 @@ public abstract class AbstractSegmentation {
 
     Dictionary dictionary = Factory.getDictinary();
 
+    Dictionary gramDictionary = Factory.getDictinary();
+
     public abstract List<String> seg(String text);
 
 //    public abstract List<String> seg(String text, SegmentationAlgorithm algorithm);
