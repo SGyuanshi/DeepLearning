@@ -7,9 +7,9 @@ import java.util.List;
 
 public abstract class AbstractSegmentation {
 
-    Dictionary dictionary = Factory.getDictinary();
+    static Dictionary dictionary = Factory.getDictinary();
 
-    Dictionary gramDictionary = Factory.getDictinary();
+    static Dictionary gramDictionary = Factory.getGramDictinary();
 
     public abstract List<String> seg(String text);
 

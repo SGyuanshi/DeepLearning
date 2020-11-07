@@ -7,7 +7,11 @@ import java.util.Set;
 public class HashSet implements Dictionary {
 
     private int maxLength = 0;
-    private final Set<String> dict = new java.util.HashSet<>();
+    private final Set<String> dict;
+
+    public HashSet(){
+        dict = new java.util.HashSet<>();
+    }
 
     @Override
     public int getMaxLength() {

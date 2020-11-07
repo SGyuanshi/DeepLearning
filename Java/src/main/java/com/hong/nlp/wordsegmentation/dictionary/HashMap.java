@@ -5,7 +5,11 @@ import java.util.Map;
 
 public class HashMap implements Dictionary{
 
-    private Map<String, Long> map = new java.util.HashMap<>();
+    private Map<String, Long> map;
+
+    public HashMap(){
+        map = new java.util.HashMap<>();
+    }
 
     @Override
     public int getMaxLength() {
