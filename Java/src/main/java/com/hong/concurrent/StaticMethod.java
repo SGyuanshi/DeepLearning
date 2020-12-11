@@ -1,4 +1,4 @@
-package com.hong.Thread;
+package com.hong.concurrent;
 
 public final class StaticMethod {
 
